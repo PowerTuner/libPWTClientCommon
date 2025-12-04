@@ -27,11 +27,11 @@
 #endif
 
 namespace PWT {
-    constexpr int getCommonMajorVersion() {
+    int getCommonMajorVersion() {
         return CLCOMMON_VER_MAJOR;
     }
 
-    constexpr int getCommonMinorVersion() {
+    int getCommonMinorVersion() {
         return CLCOMMON_VER_MINOR;
     }
 

@@ -24,8 +24,8 @@
 #include "pwtShared/Include/GPU/GPUVendor.h"
 
 namespace PWT {
-    [[nodiscard]] PWTCLIENTCOMMON_EXPORT constexpr int getCommonMajorVersion();
-    [[nodiscard]] PWTCLIENTCOMMON_EXPORT constexpr int getCommonMinorVersion();
+    [[nodiscard]] PWTCLIENTCOMMON_EXPORT int getCommonMajorVersion();
+    [[nodiscard]] PWTCLIENTCOMMON_EXPORT int getCommonMinorVersion();
     [[nodiscard]] PWTCLIENTCOMMON_EXPORT QString getGPUMarketName(PWTS::GPUVendor vendor, const QString &deviceID, const QString &revisionID);
     [[nodiscard]] PWTCLIENTCOMMON_EXPORT std::unique_ptr<StartupUtil> getStartupUtil(const QString &name);
 }
