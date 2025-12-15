@@ -54,8 +54,8 @@ namespace PWT::UI {
         PWTS::MinMax getRADJAPUSlow() const { return getRange("radj_apu_slow", 1000, 150 * 1000); }
         PWTS::MinMax getRADJAPUSkinTemp() const { return getRange("apu_skin_temp", 0, 100); }
         PWTS::MinMax getRADJDGPUSkinTemp() const { return getRange("radj_dgpu_skin_temp", 0, 100); }
-        PWTS::MinMax getRADJVrmCurrent() const { return getRange("radj_vrm_current", 8 * 1000, 300 * 1000); }
-        PWTS::MinMax getRADJVrmSocCurrent() const { return getRange("radj_vrm_soc_current", 8 * 1000, 300 * 1000); }
+        PWTS::MinMax getRADJVrmCurrent() const { return getRange("radj_vrm_current", 0, 300 * 1000); }
+        PWTS::MinMax getRADJVrmSocCurrent() const { return getRange("radj_vrm_soc_current", 0, 300 * 1000); }
         PWTS::MinMax getRADJGfxClock() const { return getRange("radj_gfx_clock", 0, 0); }
         PWTS::MinMax getRADJCO() const { return getRange("radj_co", -50, 50); }
 
