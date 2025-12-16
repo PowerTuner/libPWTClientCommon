@@ -39,11 +39,11 @@ namespace PWT {
     static QString getGPUIDsDB(const PWTS::GPUVendor vendor) {
         switch (vendor) {
             case PWTS::GPUVendor::AMD:
-                return ":/gpu/amdgpu.ids";
+                return ":/gpu/gpuIDs/amdgpu.ids";
             case PWTS::GPUVendor::Intel:
-                return ":/gpu/intelgpu.ids";
+                return ":/gpu/gpuIDs/intelgpu.ids";
             case PWTS::GPUVendor::NVIDIA:
-                return ":/gpu/nvidiagpu.ids";
+                return ":/gpu/gpuIDs/nvidiagpu.ids";
             default:
                 break;
         }
