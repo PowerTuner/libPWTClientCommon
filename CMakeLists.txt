@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.23)
 
-project(PWTClientCommon VERSION 1.0 DESCRIPTION "Shared library for PowerTuner clients" LANGUAGES CXX)
+project(PWTClientCommon VERSION 1.1 DESCRIPTION "Shared library for PowerTuner clients" LANGUAGES CXX)
 
 option(DEV_BUILD_SETUP "Enable options to build the library stand-alone for development" OFF)
 
