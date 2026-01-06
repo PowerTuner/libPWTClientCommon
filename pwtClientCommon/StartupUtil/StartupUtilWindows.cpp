@@ -27,7 +27,7 @@ namespace PWT {
     }
 
     bool StartupUtilWindows::setup() const {
-        const QString appPath = QString(R"("%1 -s")").arg(QCoreApplication::applicationFilePath().replace('/', '\\'));
+        const QString appPath = QString(R"("%1" -s)").arg(QCoreApplication::applicationFilePath().replace('/', '\\'));
         QString errStr;
         const bool res = PWTW32::regWriteSZ(HKEY_CURRENT_USER, runPath, appName.c_str(), REG_SZ, appPath, errStr);
 
